@@ -24,9 +24,12 @@ Currently supported platform:
 
 ```
 $ cd scaleio-repos
-$ ./crete-scaleio-repos -d <destdir> -s <sourcezipfile> [-v] 
-example
-$ ./create-scaleio-repos -d /srv/repos -s ScaleIO_2.0.1.3_Complete_Software_Download.zip
+$ ./create_scaleio_repo.sh [-s <src>] [-d <dest>] [-u <base_url>]
+        <src> is the complete download ei: ScaleIO_2.0.0.3_Complete_Software_Download.zip
+        <dest> is the root of your ScaleIO repo ei: /var/lib/lighttpd/repos/scaleio
+        <url> is the base url for your repo, ei: http://localhost/repos/scaleio 
+
+$ ./create_scaleio_repos.sh -d /var/lib/lighttpd/repos/scaleio -s ScaleIO_2.0.1.3_Complete_Software_Download.zip -u http://localhost/repos/scaleio
 ```
 
 ## Future
