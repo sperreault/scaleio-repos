@@ -32,6 +32,8 @@ $ ./create_scaleio_repo.sh [-s <src>] [-d <dest>] [-u <base_url>]
 $ ./create_scaleio_repos.sh -d /var/lib/lighttpd/repos/scaleio -s ScaleIO_2.0.1.3_Complete_Software_Download.zip -u http://localhost/repos/scaleio
 ```
 
+Example of usage can be seen here on [![asciicast](https://asciinema.org/aaJFdIbgKEmejzw8FJVte5rGpYaJFdIbgKEmejzw8FJVte5rGpY.png)](https://asciinema.org/a/aJFdIbgKEmejzw8FJVte5rGpY)
+
 ## Future
 Currently we only support running this in a CentOS host as we rely on the following 
 rpm's createrepo, dpkg, dpkg-devel, gnupg2, perl-TimeDate, but we would like to
